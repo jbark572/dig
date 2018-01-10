@@ -1,0 +1,4 @@
+language: cpp
+sudo: enabled
+os: osx
+script: g++ hello-world.cpp
