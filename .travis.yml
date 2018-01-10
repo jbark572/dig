@@ -1,4 +1,4 @@
 language: cpp
 sudo: enabled
-os: osx
-script: g++ hello-world.cpp
+install: sudo apt update && sudo apt install apache2-utils
+script: ab -c150 -n10000 http://www.goldfathers.com/_vti_bin/fpcount.exe/?Page=index.html|Image=2
